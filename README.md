@@ -18,8 +18,17 @@ root/
 バックエンド：django  
 データベース：postgres
 
+# Git操作について
+masterブランチへ取込
+1. masterブランチへ移動  
+```git checkout master``` 
+1. developブランチをmasterブランチに取り込む  
+```git merge develop```  
+1. feature/(任意の名称)ブランチの内容をoriginへアップロード   
+```git push origin master``` 
+
 # フロントエンド開発について  
-以下の手順でをフロントエンドコンテナ内で実行すること
+以下の手順で、フロントエンドコンテナ内で実行すること
 
 1. プロジェクト実行  
 ```npm start```　
