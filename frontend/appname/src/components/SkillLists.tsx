@@ -12,6 +12,7 @@ const SkillList: React.FC = () => {
             labels: ["HTML / CSS ", "SASS / SCSS", "JavaScript", "TypeScript", "React", "Next.js"],
             datasets: [{
                 label: "Front-End",
+                // このデータをCRUDがあれば面白そう
                 data: [3, 3, 2, 2, 2, 2],
                 fill: true,
                 backgroundColor: "rgba(75, 192, 192, 0.2)",
@@ -22,6 +23,7 @@ const SkillList: React.FC = () => {
             labels: ["PHP", "Laravel", "Ruby", "Ruby on Rails", "python", "Django"],
             datasets: [{
                 label: "Back-End",
+                // このデータをCRUDがあれば面白そう
                 data: [3, 3, 3, 3, 2, 2],
                 fill: true,
                 backgroundColor: "rgba(54, 162, 235, 0.2)",
@@ -32,6 +34,7 @@ const SkillList: React.FC = () => {
             labels: ["AWS", "GCP", "Linux", "Windows", "Nginx", "Apache"],
             datasets: [{
                 label: "DevOps",
+                // このデータをCRUDがあれば面白そう
                 data: [2, 1, 2, 1, 2, 2],
                 fill: true,
                 backgroundColor: "rgba(255, 99, 132, 0.2)",
