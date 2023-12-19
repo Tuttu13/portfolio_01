@@ -3,10 +3,17 @@
 # dependencies
 /node_modules
 <<<<<<< HEAD
+<<<<<<< HEAD
 /.pnp
 .pnp.js
 =======
 >>>>>>> master
+=======
+=======
+/.pnp
+.pnp.js
+>>>>>>> a52d71c (1th portfolio)
+>>>>>>> refs/rewritten/master
 
 # testing
 /coverage

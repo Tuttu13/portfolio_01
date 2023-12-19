@@ -4,6 +4,7 @@ const Contact: React.FC = () => {
     return(
         <>
             <h2>お問い合わせページ</h2>
+            <p>開発中</p>
         </>
     );
 };

@@ -4,6 +4,10 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
+import PV from "../assets/images/profile_image.jpg";
+
+const myImageStyle = {display: "center" , width: 300, height: 200 };
+
 const ProfileList: React.FC = () => {
     return(
         <>
@@ -14,24 +18,16 @@ const ProfileList: React.FC = () => {
                     </Typography>
                 </Grid>
                 <Grid item xs={12} md={4}>
-                    <Box sx={{ width: "100%" }}>
-                        <img style={{ width: "100%", height: "auto", borderRadius: "50%" }} src="/images/common/profile_image.jpg" />
+                    <Box>
+                        <img style={myImageStyle} src={PV} alt="profile_image.jpg"/>
                     </Box>
                 </Grid>
                 <Grid item xs={12} md={8}>
                     <Box sx={{ width: "100%", paddingLeft: {sx: "0px", md: "30px"} }}>
                         <Typography variant="body2" color="text.secondary">
-                            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <p>KTとは</p>
                         </Typography>
                     </Box>
-                </Grid>
-                <Grid item xs={12} md={12} sx={{ textAlign: 'center' }}>
-                    <Button variant="contained" size="large">
-                        LearnMore
-                    </Button>
                 </Grid>
             </Grid>
         </>
