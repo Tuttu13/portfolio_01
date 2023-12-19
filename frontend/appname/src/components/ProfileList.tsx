@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 
 import PV from "../assets/images/profile_image.jpg";
 
-const myImageStyle = { width: '500px', height: '270px' };
+const myImageStyle = {display: "center" , width: 300, height: 200 };
 
 const ProfileList: React.FC = () => {
     return(
@@ -28,11 +28,6 @@ const ProfileList: React.FC = () => {
                             <p>KTとは</p>
                         </Typography>
                     </Box>
-                </Grid>
-                <Grid item xs={12} md={12} sx={{ textAlign: 'center' }}>
-                    <Button variant="contained" size="large">
-                        LearnMore
-                    </Button>
                 </Grid>
             </Grid>
         </>

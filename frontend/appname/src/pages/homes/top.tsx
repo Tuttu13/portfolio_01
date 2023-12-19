@@ -11,44 +11,47 @@ import ProductionList from "../../components/ProductionList"
 import ProfileList from "../../components/ProfileList"
 import ContactForm from "../../components/ContactForm"
 
+const box_position = {
+    margin:'auto',
+    width:'auto',
+    height:'auto'
+}
+
 const Top: React.FC = () => {
     return(
         <>
-            <Box sx={{ height: "65vh", backgroundImage: "url(" + MV + ")", backgroundSize: "cover", backgroundPosition: "center", position: "relative" }}>
-                <Container maxWidth='md' sx={{ position: "absolute", top: "30%", left: "50%", transform: "translateX(-50%) translateY(-50%)" }}>
-                    <Grid container rowSpacing={2} columnSpacing={2} sx={{ textAlign: "center",color: "#FFFFFF", textShadow: "1px 1px 3px #000000" }}>
-                        <Grid item xs={12} md={12}>
-                            <Typography component="h2" variant="h2">
-                                MVタイトル
+            <Box sx={{ height: "55vh", backgroundImage: "url(" + MV + ")", backgroundSize: "cover", backgroundPosition: "center", position: "relative" }}>
+                <Container sx={{ height:450, display: "flex" , justifyContent: 'center', alignItems: 'center', color: "#FFFFFF", textShadow: "1px 1px 3px #000000" }}>
+                    <Grid>
+                        <Grid>
+                            <Typography component="h2"  variant="h2">
+                                KTのポートフォリオ
                             </Typography>
                         </Grid>
-                        <Grid item xs={12} md={12}>
+                        <Grid>
                             <Typography>
-                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                reactとdjangoによるwebアプリ
                             </Typography>
                         </Grid>
                     </Grid>
                 </Container>
-                <Button variant="contained" size="large" sx={{ position: "absolute", bottom: "10%", left: "50%", transform: "translateX(-50%)" }}>
-                    LearnMore
-                </Button>
             </Box>
-            <Box>
-                <Container maxWidth='md'>
+            <Box sx={box_position}>
+                <Container maxWidth='md' >
                     <ProfileList />
                 </Container>
             </Box>
-            <Box>
+            <Box sx={box_position}>
                 <Container maxWidth='md'>
                     <SkillList />
                 </Container>
             </Box>
-            <Box>
+            <Box sx={box_position}>
                 <Container maxWidth='md'>
                     <ProductionList />
                 </Container>
-            </Box>
-            <Box>
+            </Box >
+            <Box sx={box_position}>
                 <Container maxWidth='md'>
                     <ContactForm />
                 </Container>
