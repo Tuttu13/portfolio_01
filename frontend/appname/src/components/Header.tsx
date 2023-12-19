@@ -39,7 +39,7 @@ const Header: React.FC = () => {
             <Container maxWidth="md">
                 <Box sx={{ display: 'flex', justifyContent: 'space-between'}}>
                     <Box>
-                        <h1>test</h1>
+                        <h1>KTのポートフォリオ</h1>
                     </Box>
                     <Box>
                         <List component="nav" sx={{ display: 'flex', justifyContent: 'flex-start' }}>
