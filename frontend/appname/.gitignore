@@ -2,6 +2,11 @@
 
 # dependencies
 /node_modules
+<<<<<<< HEAD
+=======
+/.pnp
+.pnp.js
+>>>>>>> a52d71c (1th portfolio)
 
 # testing
 /coverage
