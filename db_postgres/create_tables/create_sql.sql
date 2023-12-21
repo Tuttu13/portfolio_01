@@ -22,3 +22,4 @@ CREATE TABLE skill(
 );
 
 
+-- triger update_at 追加予定
