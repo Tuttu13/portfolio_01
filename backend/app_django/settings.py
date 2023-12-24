@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "portfolio.apps.PortfolioConfig",
 ]
 
 MIDDLEWARE = [
@@ -76,10 +77,10 @@ WSGI_APPLICATION = 'app_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': "dvdrental",
-        'USER': "postgres",
-        'PASSWORD': "postgresql",
-        'HOST': "localhost",
+        'NAME': "dbname",
+        'USER': "root",
+        'PASSWORD': "password",
+        'HOST': "d12db46c674e",
         'PORT': "5432",
     }
 }
