@@ -1,10 +1,23 @@
 from django.db import models
-from django.core.exceptions import ValidationError
+from django.core.exceptions import ValidationError 
+
+# バリデーションチェッククラス
+# class User_validators():
+
+#     def check_value(value, min_length=None, max_length=None):
+        
+#         if isinstance(value, type(int)):
+            
+#             raise ValidationError()
+
+#         if min_length < value < max_length  is True:
+        
+#             raise ValidationError()
+
 
 # Create your models here.
 class User(models.Model):
-    user_id = models.IntegerField(validators=[validators.MinValueValidator(0),
-                    validators.MaxValueValidator(100)])
+    user_id = models.IntegerField(max_length=50, validators=[])
     name = models.CharField(max_length=500)
     user_info = models.CharField(max_length=500)
     created_at = models.DateTimeField(auto_now_add=True)
