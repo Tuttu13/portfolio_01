@@ -29,7 +29,7 @@ services:
     volumes:
       - ./frontend:/usr/frontend
     ports:
-      - "3000:3000"
+      - ":3000"
 
 volumes:
   postgres_data:
