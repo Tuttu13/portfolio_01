@@ -63,6 +63,6 @@ masterブランチへ取込
 ```rm -rf node_modules```　
 
 ## 参考
-https://qiita.com/mirrors/items/595f35249b065c679b2c
+
 
 >>>>>>> master
